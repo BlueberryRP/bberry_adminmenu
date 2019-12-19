@@ -51,7 +51,7 @@ Citizen.CreateThread(function()
 				elseif WarMenu.Button('MountHagen') then
 					SetEntityCoords(playerPed, -1917.85,1333.33,200.86)
 				elseif WarMenu.Button('Rhodes') then
-					SetEntityCoords(playerPed, -1218.43,-1286.51,76.9)
+					SetEntityCoords(playerPed, 1299.68,-1330.98,77.5)
 			end
 			WarMenu.Display()
 			elseif WarMenu.IsMenuOpened('AddMoney') then
