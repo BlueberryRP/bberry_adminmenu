@@ -38,7 +38,7 @@ Citizen.CreateThread(function()
 					SetEntityCoords(playerPed, -908.72,-1366.0,45.41) 
 				elseif WarMenu.Button('Strawberry') then
 					SetEntityCoords(playerPed, -1781.67,-378.35,158.14) 
-				elseif WarMenu.Button('Strawberry') then
+				elseif WarMenu.Button('Saint Deny') then
 					SetEntityCoords(playerPed, 2415.1,-1164.2,46.29)
 				elseif WarMenu.Button('Annesburg') then
 					SetEntityCoords(playerPed, 2904.81,1356.38,51.72)
