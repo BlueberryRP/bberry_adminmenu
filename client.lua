@@ -68,13 +68,16 @@ end)
 
 RegisterNetEvent('bberry:menu')
 AddEventHandler('bberry:menu', function()
-  WarMenu.OpenMenu('MenuList')
+	if not WarMenu.IsAnyMenuOpened() then
+		WarMenu.OpenMenu('MenuList')
+	end
 end)
+
 
 Citizen.CreateThread(function()
 	while true do
 		Citizen.Wait(0)
-		if IsControlJustReleased(0, keys['H']) then
+		if (IsControlJustReleased(0, keys['H']) and IsInputDisabled(2)) or (IsControlJustPressed(0, 0xD04E9FE2) and not IsInputDisabled(2)) then
 			TriggerServerEvent('bberry:checkgroup')
 		end
 	end
